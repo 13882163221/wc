@@ -150,3 +150,5 @@ void stopWatch(DigitalStopWatchPtr instance)
 这个图看起来确实像一个面向对象的解决方案。但是请不要担心——我们不会跟随黑暗面的诱惑在 C 中模拟继承。 但是，在开发具体实现之前，让我们解释一下所涉及的参与者。
 
 <!-- •DigitalStopWatch: Design Patterns [2] defines this as the context. The context has a reference to one o
+sss
+sss
