@@ -32,3 +32,15 @@ mindmap
         ("Composite")
         ("Compound")
 ```
+
+<div style="display:flex;justify-content:center;">
+    <figure>
+        <img src="Pics/Pic2_1.png" height="200" title="媒体院SLAM地图成功融合">
+        <figcaption>媒体院SLAM地图成功融合</figcaption>
+    </figure>
+    <figure>
+        <img src="Pics/Pic2_2.png" height="200" title="媒体院SLAM地图融合失败">
+        <figcaption>媒体院SLAM地图融合失败</figcaption>
+    </figure>
+</div>
+
