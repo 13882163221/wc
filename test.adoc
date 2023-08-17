@@ -226,3 +226,136 @@ E=mc^2^
 | 第三行,第二列
 | 第三行,第三列
 |===
+
+七、链接
+
+1、网址
+
+不显示下划线的超链接
+\https://asciidoctor.org/docs/user-manual
+
+只显示链接提示
+https://asciidoctor.org/docs/user-manual[官网]
+
+2、自定义锚点
+
+[#header_anchor]
+== 示例标题
+
+[[text_anchor]]
+这是一段示例描述自然段...
+
+
+
+
+[[inner_text_anchor]]这是一个内联的锚点...
+
+跳转锚点 <<text_anchor, 这是...>>
+
+跳转锚点 xref:text_anchor[这是].
+
+3、文件间引用
+
+八、指令
+
+include
+将一个文件导入到当前文件
+include::path[<attrlist>]
+
+包含一个子文件,文件名为content
+include::content.adoc[]
+
+九、图片
+
+ image:: 引入一个块图片,占据整行.如果要使用内联图片,则使用 image:
+
+[link=https://www.flickr.com/photos/javh/5448336655]
+image::sunset.jpg[Sunset,300,200]
+
+image::sunset.jpg[alt=Flower,width=640,height=480]
+
+image:https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg[Linux,25,35] everywhere these days.
+image::https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg[Tux,250,350]
+
+使图片右浮动,并居中
+
+image::tiger.png[Tiger,200,200,float="right",align="center"]
+
+十、文档
+
+(1)段落提示：
+
+[TIP]
+====
+这是一大段提示内容
+各种提示的格式
+
+- 提示1
+- 提示2
+====
+
+(2)文档花絮块：
+
+.关于作者
+****
+一条咸菜鱼,又闲又菜又多余.
+****
+
+(3)文档示例块
+
+.示例文档标题
+====
+以下内容会被格式输出,作为一个示例
+
+- 示例格式
+- 示例格式
+
+The document header is useful, but not required.
+====
+
+(4)文档代码块
+
+[source%nowrap, java]
+----
+  System.out.println('Hello Word!');
+----
+
+(5)文档摘要块
+
+*行引用*
+
+[quote, 作者(可选), 副标题或者出处(可选)]
+这是引用的正文
+
+*块引用*
+[quote, 作者(可选)]
+____
+自然段1.......
+
+自然段2......
+____
+
+十一、引用诗歌
+
+(1)律诗格式
+
+[verse, 作者(可选), 副标题或者出处(可选)]
+首联,
+颔联.
+颈联,
+尾联.
+
+(2)词牌格式
+
+[verse, 作者(可选), 副标题或者出处(可选)]
+____
+(仄)仄仄平平，(仄)仄平平仄。
+
+(仄)仄平平仄仄平，(仄)仄平平仄。
+
+(仄)仄仄平平，(仄)仄平平仄。
+
+(仄)仄平平仄仄平，(仄)仄平平仄。
+____
+
+
